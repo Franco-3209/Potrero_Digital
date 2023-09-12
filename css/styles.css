@@ -1,2 +1,70 @@
+body {
+    background-image: url(../imagenes/cannoli\ fondo\ body.jpg);
+    background-size: auto;
+    background-repeat: repeat; 
+      
+}
 
+.intro {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: left;
+}
 
+.significado {
+    font-size: 20px;
+    width: 900px;
+    text-align: left;
+}
+
+.multimedia {
+    width: 560px;
+    height: 315px;   
+}
+
+h1 {
+    background: linear-gradient(70deg, green, white, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-size: 150px;
+    font-family: tahoma;
+    
+}
+
+h2 {
+    font-size: 55px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+ul {
+    text-align:left;
+    list-style-type: square;
+    font-family: verdana;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+}
+
+ol {
+    max-width: 950px; 
+    overflow-wrap: break-word;
+    list-style-type: decimal;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: initial;
+
+}
+
+b {
+    color:red;
+}
