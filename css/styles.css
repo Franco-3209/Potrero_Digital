@@ -2,7 +2,49 @@ body {
     background-image: url(../imagenes/cannoli\ fondo\ body.jpg);
     background-size: auto;
     background-repeat: repeat; 
-      
+  }
+
+.nav-main {
+    float: left;
+  }
+
+.nav-main ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+
+.nav-main ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+
+.nav-main ul li a {
+    display: block;
+    padding: 10px;
+    color: #181515;
+    text-decoration: none;
+  }
+
+.nav-main ul li:hover {
+    background: #eca023;
+  }
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+}
+
+.whatsapp-icon img {
+    width: 60px; 
+    height: auto;
+}
+
+.inicio {
+    position: fixed;
+    top: 40px;
+    right: 40px;
 }
 
 .intro {
@@ -30,7 +72,7 @@ h1 {
     text-align: center;
     font-size: 150px;
     font-family: tahoma;
-    
+
 }
 
 h2 {
@@ -56,7 +98,7 @@ ul {
 }
 
 ol {
-    max-width: 950px; 
+    max-width: 800px; 
     overflow-wrap: break-word;
     list-style-type: decimal;
     font-family: Helvetica;
@@ -67,4 +109,37 @@ ol {
 
 b {
     color:red;
+}
+
+.cuadro-de-texto {
+    
+    
+    padding: 20px;
+    margin: 10px;
+    float: right;
+    width: 800px;
+    height: 800px;
+}
+
+/* Estilos para los encabezados y el texto dentro del cuadro */
+.cuadro-de-texto h2 {
+    color: #333;
+}
+
+footer {
+    background: linear-gradient(70deg, rgba(0, 128, 0, 0.596), rgba(255, 255, 255, 0.596), rgba(255, 0, 0, 0.589));
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    font-size: 20px;
 }

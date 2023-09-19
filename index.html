@@ -7,13 +7,33 @@
     <link rel="icon" type="imgage/jpeg" href="./imagenes/cannoli-icon.jpeg">
     <title>Receta De Cannoli Siciliano</title>
 </head>
-<body>  
+<body id="inicio">
+    <div class="inicio">
+        <a href="#inicio">
+            <img src="./imagenes/home.png" alt="inicio">
+        </a>
+    </div>
+    <nav class="nav-main">
+        <ul>
+		<li><a href="#receta">Receta</a></li>
+		<li><a href="#ingredientes">Ingredientes</a></li>
+		<li><a href="#procedimiento">Procedimiento</a></l>
+		<li><a href="#relleno">Relleno</a></li>
+		<li><a href="#footer">Contacto</a></li>
+	 </ul>
+    </nav>
+    <div class="whatsapp-icon">
+        <a href="https://api.whatsapp.com/send?phone=5492915747629" target="_blank">
+            <img src="./imagenes/whatsapp_icon.png" alt="WhatsApp" />
+        </a>
+    </div>
+    <br>
     <h1>Cannoli Siciliano</h1>
      <!--Agregue el control de Volumen porque sino se pone insoportable (cuando usemos js lo oculto)-->
      <audio controls>
         <source src="./audios/Tarantella.mp3" type="audio/mp3">
     </audio>
-<p class="intro">Receta de Cannoli Siciliano, un clásico italiano de sabor y textura única.</p>
+<p id="receta" class="intro">Receta de Cannoli Siciliano, un clásico italiano de sabor y textura única.</p>
 <p class="significado">El cannolo (significa en italiano 'pequeño tubo'; plural, cannoli) es un dulce típico de la región italiana de Sicilia, de donde es originario. Consiste en una masa enrollada en forma de tubo que dentro lleva ingredientes mezclados con queso ricota. Es tan popular en Sicilia que es muy rara la pastelería donde no se expone una bandeja de cannoli.</p>
 <br>
 <br>
@@ -23,7 +43,18 @@
 <br>
 <iframe class="multimedia"  src="https://www.youtube.com/embed/Cbyh9kDkGsw?si=9pb8M_a6KUGn9N3r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
-<h2>Ingredientes</h2>
+<aside class="cuadro-de-texto">
+    <h2>Recetas Recomendadas</h2>
+    <nav class="nav-recetas">
+        <ul>
+		<li><a href="https://sofiabailetti.github.io/potreroDigital/index.html" target="_blank">Empanadas Salteñas - by Sofi </a></li>
+		<li><a href="https://andrearosendo.github.io/BahiaFront/index.html" target="_blank">RIWWEL KUCHEN - Torta Alemana - by Andrea </a></li>
+		<li><a href="https://luchocg17.github.io/PampaFront/index.html" target="_blank">Empanadas Salteñas - by Lucho </a></l>
+		<li><a href="https://mariadelapaz1.github.io/proyectobahia/index.html" target="_blank">Fernet con Coca - Panky </a></li>		
+	 </ul>
+    </nav>
+</aside>
+<h2 id="ingredientes">Ingredientes</h2>
 <h4>Para la Masa de Cannoli:</h4>
 <ul>
     <li>Pizca de Sal</li>
@@ -44,7 +75,7 @@
     <li>Chips de Chocolate 100 Gr.</li>
 </ul>
 <br>
-<h2>Procedimiento</h2>
+<h2 id="procedimiento">Procedimiento</h2>
 <h3>Como preparar la masa para Cannoli</h3>
 <ol>
     <li>Colocar en un bowl la harina, azúcar, cacao amargo, canela y pizca de sal, mezclar bien los ingredientes.</li>
@@ -99,7 +130,7 @@
     <li>Listo ahora sólo queda rellenarlos!</li>
 </ol>
 <br>
-<h2>El relleno del  Cannoli</h2>
+<h2 id="relleno">El relleno del  Cannoli</h2>
 <ol>
     <li>Colocar dentro de una procesadora la ricotta y azúcar.</li> 
     <li>Procesar hasta obtener una pasta cremosa.</li>
@@ -123,5 +154,27 @@
 <img class="multimedia" src="./imagenes/Cannoli.jpg" alt="Cannolis Listos!!">
 <br>
 <br>
+<footer id="footer">
+        <h3>Síguenos en las redes sociales:</h3>
+        <a href="https://www.facebook.com/franco.libertini/" target="_blank">
+            <img src="./imagenes/facebook_icon.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/franco.libertini/" target="_blank">
+            <img src="./imagenes/instagram_icon.png" alt="instagram">
+        </a>
+        <a href="https://discord.gg/JryCgHuk" target="_blank">
+            <img src="./imagenes/discord_icon.png" alt="discord">
+        </a>
+        <a href="https://www.twitch.tv/franco_3211">
+            <img src="./imagenes/twitch_icon.png" alt="twitch">
+        </a>
+        <a href="https://twitter.com/Libertini3209" target="_blank">
+            <img src="./imagenes/twitter_icon.png" alt="twitter">
+        </a>
+        <br>
+        <p>Datos de contacto:</p>
+        <p>Teléfono:<a href="tel:2915747629">(0291)-155747629</a></p>
+        <p>Correo electrónico:<a href="mailto:libertini.f.a@gmail.com">libertini.f.a@gmail.com</p>
+</footer>
 </body>
 </html>
