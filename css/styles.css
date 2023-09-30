@@ -1,9 +1,14 @@
+html {
+    font-size: 16px;
+}
+
 
 body {
     background-image: url(../imagenes/cannoli\ fondo\ body.jpg);
     background-size: auto;
     background-repeat: repeat; 
     max-width: 100%;
+    font-size: 16px;
 }
 
 .nav-main {
@@ -18,7 +23,7 @@ body {
 .nav-main ul li {
     float: left;
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
   }
 
 .nav-main ul li a {
@@ -32,30 +37,44 @@ body {
     background: #eca023;
   }
 
+audio {
+    display: none;
+}
+
 header {
     border: 5px solid red;
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px 20px;
     
 }
 
-.logo img{
-    max-width: 100px;
-    height: auto;
-}
-
 .social {
-    width: 600px;
+    width: 35vw;
     display: flex;
     align-items: center;
-    
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+.social img {
+    width: 4vw;
+    max-width: 200%;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 10vw;
+    height: auto;
+}
 
 .whatsapp-icon {
     position: fixed;
@@ -64,8 +83,12 @@ header {
 }
 
 .whatsapp-icon img {
-    width: 60px; 
+    width: 5vw; 
     height: auto;
+}
+
+.inicio img {
+    width: 3vw;
 }
 
 .inicio {
@@ -74,20 +97,22 @@ header {
 }
 
 .intro {
-    font-size: 35px;
+    font-size: 2.5vw;
     font-family: 'Franklin Gothic Medium';
     text-align: left;
 }
 
 .significado {
-    font-size: 20px;
-    width: 900px;
+    font-family: 'Italianno', cursive;
+    font-size: 2.5vw;
+    width: 70vw;
     text-align: left;
 }
 
 .multimedia {
-    width: 560px;
-    height: 315px;   
+    width: 30%;
+    max-width: 50%;
+    height: auto;   
 }
 
 h1 {
@@ -98,23 +123,23 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     text-align: center;
-    font-size: 70px;
+    font-size: 5vw;
     font-family: tahoma;
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 4vw;
     text-decoration: underline;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 ul {
@@ -123,15 +148,15 @@ ul {
     font-family: verdana;
     font-weight: 600;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 ol {
-    max-width: 800px; 
+    max-width: 50vw; 
     overflow-wrap: break-word;
     list-style-type: decimal;
     font-family: Helvetica;
-    font-size: 18px;
+    font-size: 1vw;
     font-style: initial;
 
 }
@@ -140,15 +165,24 @@ b {
     color:red;
 }
 
+a {
+    color: #680ae4;
+    text-decoration: none; 
+    transition: color 0.5s; 
+}
+
+a:hover {
+    color: #a3127f; 
+}
+
 .cuadro-de-texto {
     padding: 20px;
     margin: 10px;
     float: right;
-    width: 800px;
-    height: 800px;
+    width: 50vw;
+    height: 20vw;
 }
 
-/* Estilos para los encabezados y el texto dentro del cuadro */
 .cuadro-de-texto h2 {
     color: #333;
 }
@@ -164,6 +198,14 @@ footer {
     text-align: center;
 }
 
+footer iframe {
+    width: 15%;
+    max-width: 25%;
+    height: auto;
+
+}
+
+
 .datos {
     font-size: large;
     font-family: Verdana;
@@ -177,6 +219,13 @@ footer a {
 }
 
 footer p {
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
+
+.cv-info p {
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.5vw;
+    max-width: 50vw;
+
+}
