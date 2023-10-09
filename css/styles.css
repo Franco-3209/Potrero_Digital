@@ -1,15 +1,20 @@
+/* Seteado medida fija (era para usar medidas en "vw" ) */
+
 html {
     font-size: 16px;
 }
 
+/* Fondo de Pantalla */
 
 body {
     background-image: url(../imagenes/cannoli\ fondo\ body.jpg);
-    background-size: auto;
+    background-size:contain;
     background-repeat: repeat; 
     max-width: 100%;
     font-size: 16px;
 }
+
+/* Navegacion */
 
 .nav-main {
     float: left;
@@ -23,7 +28,7 @@ body {
 .nav-main ul li {
     float: left;
     font-family: Arial, sans-serif;
-    font-size: 1.5vw;
+    font-size: 25px;
   }
 
 .nav-main ul li a {
@@ -37,9 +42,13 @@ body {
     background: #eca023;
   }
 
+  /* Oculte el sonido de fondo (si se recarga la pagina arranca solo) */
+
 audio {
     display: none;
 }
+
+/* Formato y estilos del Header */
 
 header {
     border: 5px solid red;
@@ -52,7 +61,7 @@ header {
 }
 
 .social {
-    width: 35vw;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -60,8 +69,8 @@ header {
 }
 
 .social img {
-    width: 4vw;
-    max-width: 200%;
+    width: 70px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -72,9 +81,11 @@ header {
 }
 
 .logo img {
-    max-width: 10vw;
+    max-width: 200px;
     height: auto;
 }
+
+/* Contacto fijado en lateral inferior derecho */
 
 .whatsapp-icon {
     position: fixed;
@@ -83,12 +94,14 @@ header {
 }
 
 .whatsapp-icon img {
-    width: 5vw; 
+    width: 60px; 
     height: auto;
 }
 
+/* Retorno al Inicio fijado en lateral superior derecho */
+
 .inicio img {
-    width: 3vw;
+    width: 40px;
 }
 
 .inicio {
@@ -96,23 +109,20 @@ header {
     right: 40px;
 }
 
+/* Estilos y tamaños en los textos */
+
 .intro {
-    font-size: 2.5vw;
+    font-size: 35px;
     font-family: 'Franklin Gothic Medium';
     text-align: left;
 }
 
 .significado {
     font-family: 'Italianno', cursive;
-    font-size: 2.5vw;
-    width: 70vw;
+    font-size: 35px;
+    font-weight: 500;
+    width: 1100px;
     text-align: left;
-}
-
-.multimedia {
-    width: 30%;
-    max-width: 50%;
-    height: auto;   
 }
 
 h1 {
@@ -123,23 +133,22 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     text-align: center;
-    font-size: 5vw;
+    font-size: 70px;
     font-family: tahoma;
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 55px;
     text-decoration: underline;
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: 40px;
 }
 
 h4 {
-    font-size: 2vw;
+    font-size: 30px;
 }
 
 ul {
@@ -148,17 +157,16 @@ ul {
     font-family: verdana;
     font-weight: 600;
     font-style: italic;
-    font-size: 1vw;
+    font-size: 20px;
 }
 
 ol {
-    max-width: 50vw; 
+    max-width: 800px; 
     overflow-wrap: break-word;
     list-style-type: decimal;
     font-family: Helvetica;
-    font-size: 1vw;
+    font-size: 18px;
     font-style: initial;
-
 }
 
 b {
@@ -175,17 +183,40 @@ a:hover {
     color: #a3127f; 
 }
 
+/* Tamaños, Formatos y ubicacion de objetos */
+
+.multimedia {
+    width: 560px;
+    height: 315px;   
+}
+
+.solo-cel {
+    display: none;
+}
+
+.cuadro-con-imagen {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imagen {
+    flex: 1;
+    padding-right: 20px;
+}
+
+
 .cuadro-de-texto {
     padding: 20px;
-    margin: 10px;
-    float: right;
-    width: 50vw;
-    height: 20vw;
+    margin: 10px auto;
+    height: 300px;
 }
 
 .cuadro-de-texto h2 {
     color: #333;
 }
+
+/* Footer */
 
 footer {
     display: flex;
@@ -199,33 +230,109 @@ footer {
 }
 
 footer iframe {
-    width: 15%;
-    max-width: 25%;
-    height: auto;
-
+    padding-top: 10px;
+    width: 300px;
+    height: 180px;
 }
 
 
 .datos {
+    padding-top: 10px;
     font-size: large;
     font-family: Verdana;
     
 }
 
 footer a {
+    padding-top: 30px;
     color: #000000;
     text-decoration: none;
     margin: 0 10px;
 }
 
 footer p {
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 
 .cv-info p {
     font-family: 'Syne Mono', monospace;
-    font-size: 1.5vw;
-    max-width: 50vw;
+    font-size: 30px;
+    max-width: 1000px;
 
+}
+
+/* Puntos de quiebres de las Media Queries */
+
+/* Breackpoint para Tablet */
+@media screen and (max-width: 800px) {
+
+    .social {
+        padding-top: 20px;
+    }
+    
+    .significado {
+        max-width: 750px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+}
+
+/* Breackpoint para celulares */
+@media screen and (max-width: 500px) {
+    
+    header h1 {
+        font-size: 60px;
+    }
+
+    .logo img {
+        width: 130px;
+
+    }   
+    
+    .social {
+        padding-top: 20px;
+    }
+
+    .social img {
+        width: 30px;
+    }
+    
+    .inicio img {
+        width: 20px;
+    }
+
+    .inicio {
+        position: fixed;
+        right: 15px;
+        top: 35px;
+    }
+
+    .significado {
+        max-width: 300px;
+    }
+
+    .multimedia {
+        width: 85%;
+        height: auto;
+    }
+
+    .solo-cel {
+        display: block;
+        width: 85%;
+        height: auto;
+    }
+
+    .whatsapp-icon{
+        position: fixed;
+        bottom: 10px;
+        right: 0 ;
+    }
+
+    .whatsapp-icon img {
+        width: 50%;
+        
+    }
 }
