@@ -2,6 +2,7 @@
 
 html {
     font-size: 16px;
+    margin: 5px;
 }
 
 /* Fondo de Pantalla */
@@ -120,7 +121,7 @@ header {
 .significado {
     font-family: 'Italianno', cursive;
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 600;
     width: 1100px;
     text-align: left;
 }
@@ -134,7 +135,8 @@ h1 {
     -webkit-background-clip: text;
     text-align: center;
     font-size: 70px;
-    font-family: tahoma;
+    font-weight: 700;
+    font-family: Tahoma;
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -206,15 +208,9 @@ a:hover {
 }
 
 
-.cuadro-de-texto {
-    padding: 20px;
-    margin: 10px auto;
-    height: 300px;
-}
 
-.cuadro-de-texto h2 {
-    color: #333;
-}
+/* Tarjetas de recetas */
+
 
 /* Footer */
 
@@ -263,6 +259,8 @@ footer p {
 }
 
 /* Puntos de quiebres de las Media Queries */
+/*---------------------------------------------*/
+
 
 /* Breackpoint para Tablet */
 @media screen and (max-width: 800px) {
