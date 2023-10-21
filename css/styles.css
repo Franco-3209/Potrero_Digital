@@ -40,13 +40,28 @@ body {
 .nav-main ul li a {
     display: block;
     padding: 10px;
-    color: #181515;
+    color: #0712aa;
     text-decoration: none;
   }
 
 .nav-main ul li:hover {
     background: #eca023;
+    border-radius: 45%;
   }
+
+/* Imagenes del modo oscuro y claro (se oculta una u otra) */
+
+.light img {
+    width: 40px;
+}
+
+.light{
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 
   /* Oculte el sonido de fondo (si se recarga la pagina arranca solo) */
 
@@ -212,6 +227,26 @@ a:hover {
     padding-right: 20px;
 }
 
+/* Modo Oscuro y Claro */
+
+.black-background {
+    background-image: none;
+    background-color: black;
+    color: #fff;
+} 
+
+.black-background .nav-main ul li a{
+    color: aquamarine;
+}
+
+.black-background .nav-main ul li:hover {
+    background-color: #680ae4;
+}
+
+.black-background .light img{
+    content: url(../imagenes/white-file.png);  
+}
+
 
 
 /* Tarjetas de recetas */
@@ -331,12 +366,10 @@ footer iframe {
     height: 180px;
 }
 
-
 .datos {
     padding-top: 10px;
     font-size: large;
     font-family: Verdana;
-    
 }
 
 footer a {
@@ -348,6 +381,13 @@ footer a {
 
 footer p {
     font-size: 20px;
+}
+
+.datos-desarrollador {
+    background: initial;
+    color: initial;
+    border: initial;
+    border-radius: 50%;    
 }
 
 
@@ -451,5 +491,6 @@ footer p {
     .container .card .content a {
         font-size: 0.9rem;
     }
+
     
 }
