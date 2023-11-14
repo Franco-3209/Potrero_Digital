@@ -7,7 +7,6 @@ const botonAccesibilidad = document.getElementById("botonAccesibilidad");
 botonAccesibilidad.addEventListener("click", function () {
 
     document.body.classList.toggle("black-background");
-    alert ("anda")
 });
 
 // Alerta de Datos Del Desarrollador
